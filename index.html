@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wumpus Game with Gold, Breeze, and Scent</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Hunt the Wumpus (and Find the Gold)</h1>
-    <p id="game-status">Move with W, A, S, D keys</p>
-    <div id="grid"></div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Wumpus Game with Gold, Breeze, and Scent</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<h1>Hunt the Wumpus (and Find the Gold)</h1>
 
-   <script src="game.js"></script>
+		<p id="game-status">Move with W, A, S, D keys</p>
 
-   <link rel="stylesheet" href="style.css">
-</body>
+		<div id="grid"></div>
+
+		<!--AI Button-->
+		<button id="start-ai-button">Start AI</button>
+
+		<script src="game.js" defer></script>
+		<script src="ai.js" defer></script>
+
+		<link rel="stylesheet" href="style.css" />
+		<h1>Score: <span id="score">0</span></h1>
+		<h1>Arrow: <span id="arrow">1</span></h1>
+	</body>
 </html>
